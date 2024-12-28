@@ -57,6 +57,7 @@ db.sqlite3-journal
 .ipynb_checkpoints
 
 # Environments
+.env
 .venv
 env/
 venv/
