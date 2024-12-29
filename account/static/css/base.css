@@ -233,6 +233,10 @@ ul.messages li a.close {
     gap: 10px;
 }
 
+.social  ul{
+   padding-left: 0;
+}
+
 .social li {
     list-style: none;
     padding: 10px 20px;
