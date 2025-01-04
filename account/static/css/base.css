@@ -331,6 +331,41 @@ a.like, a.follow {
     border-radius: 50%;
 }
 
+.like.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.like.button:hover {
+    background-color: #0056b3;
+    color: #e6e6e6;
+}
+
+.like.button:active {
+    background-color: #003f7f;
+    border-color: #003f7f;
+}
+
+.like.button.unlike {
+    background-color: #dc3545;
+    border-color: #a71d2a;
+}
+
+.like.button.unlike:hover {
+    background-color: #a71d2a;
+    color: #fff;
+}
+
 .form-container {
     display: flex;
     align-items: flex-start;
