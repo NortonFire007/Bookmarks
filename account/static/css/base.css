@@ -485,3 +485,19 @@ img.user-detail {
 #people-list .info .title:hover {
     text-decoration: underline;
 }
+
+/* actions */
+.action {
+    clear: both;
+    overflow: auto;
+}
+
+.action .images {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.action .date {
+    font-style: italic;
+    color: #ccc;
+}
