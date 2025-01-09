@@ -44,9 +44,11 @@ INSTALLED_APPS = [
     'images.apps.ImagesConfig',
     'easy_thumbnails',
     'actions.apps.ActionsConfig',
+    'debug_toolbar'
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -92,6 +94,10 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT'),
     }
 }
+
+REDIS_HOST = os.getenv('REDIS_HOST')
+REDIS_PORT = os.getenv('REDIS_PORT')
+REDIS_DB = os.getenv('REDIS_DB')
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -174,3 +180,7 @@ ABSOLUTE_URL_OVERRIDES = {
     'auth.user': lambda u: reverse_lazy('user_detail',
                                         args=[u.username])
 }
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
